@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net7.0-windows10.0.19041.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <UseWindowsForms>true</UseWindowsForms>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="bolt_FILL1_wght400_GRAD0_opsz48.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="icon.ico" />
+      <None Remove="connect_power.wav" />
+      <Resource Include="Resources\connect_power.wav" />
+      <Resource Include="Resources\icon.ico" />
+      <None Remove="Resources\icon_green.ico" />
+      <Resource Include="Resources\icon_green.ico" />
+      <None Remove="Resources\icon_yellow.ico" />
+      <Resource Include="Resources\icon_yellow.ico" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NAudio" Version="2.1.0" />
+    </ItemGroup>
+
+</Project>
